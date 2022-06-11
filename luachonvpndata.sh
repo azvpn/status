@@ -1,39 +1,33 @@
 #!/bin/bash
 
 clear
-echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
+echo "---------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
-echo "          ███████████   ███████████   ███████████   ███████████   ███████████   ██       ██   ███████████       ██          ██   ██          ██   ██████████"
-echo "          ██       ██   ██       ██   ██            ██            ██       ██   ██       ██   ██       ██        ██        ██     ██        ██            ██"
-echo "          ██            ██       ██   ██            ██            ██       ██   ██       ██   ██                  ██      ██       ██      ██            ██"
-echo "          ██            ██       ██   ██            ██            ██       ██   ██       ██   ██                   ██    ██         ██    ██            ██"
-echo "          ██            ██       ██   ██            ██            ██       ██   ██       ██   ██                    ██  ██           ██  ██            ██"
-echo "          ███████████   ███████████   ███████████   ███████████   ██       ██   ███████████   ██                     ████             ████            ██"
-echo "                   ██   ██            ██            ██            ██       ██            ██   ██   ██████            ████              ██            ██"
-echo "                   ██   ██            ██            ██            ██       ██            ██   ██   ██  ██           ██  ██             ██           ██"
-echo "                   ██   ██            ██            ██            ██       ██            ██   ██       ██          ██    ██            ██          ██"
-echo "          ██       ██   ██            ██            ██            ██       ██            ██   ██       ██         ██      ██           ██         ██"
-echo "          ███████████   ██            ███████████   ███████████   ███████████            ██   ███████████   ██   ██        ██          ██         ██████████"
+echo "                             █████  ███████ ██    ██ ██████  ███    ██    ███    ███ ███████" 
+echo "                            ██   ██    ███  ██    ██ ██   ██ ████   ██    ████  ████ ██"      
+echo "                            ███████   ███   ██    ██ ██████  ██ ██  ██    ██ ████ ██ ████"█   
+echo "                            ██   ██  ███     ██  ██  ██      ██  ██ ██    ██  ██  ██ ██"      
+echo "                            ██   ██ ███████   ████   ██      ██   ████ ██ ██      ██ ███████" 
 echo -e ""
-echo "          --------------------------------------------------------------------------------------------------------------------------------------------------"
+echo "----------------------------------------------------------------------------------------------------------------------------------"
 echo -e ""
-echo "                                                                Vui Lòng Lựa Chọn Phương Thức !"
+echo "                                                  Vui Lòng Lựa Chọn Phương Thức !"
 echo -e ""
-echo  "         ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████"
-echo  "         ██                                                                  ██                                                                          ██"
-echo  "         ██                          1. V2RAY                                ██                                2. TROJAN                                 ██"
-echo  "         ██                                                                  ██                                                                          ██"
-echo  "         ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████"
+echo  "      ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████"
+echo  "      ██                                                      ██                                                            ██"
+echo  "      ██                  1. V2RAY                            ██                        2. TROJAN                           ██"
+echo  "      ██                                                      ██                                                            ██"
+echo  "      ████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████"
 echo -e ""
 echo -e ""
-echo -e ""                                                                                                      
+echo -e ""                                                                                                    
     echo && read -p "  Vui Lòng Nhập Một Lựa Chọn 1 Hoặc 2: " num
 
     case "${num}" in
-        1) cd /etc/XrayR && rm -rf config.yml && curl -OL https://raw.githubusercontent.com/Nghi235/config/main/vpndata/v2ray/config.yml && cd ../.. && bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/setup.sh) && nano /etc/XrayR/config.yml
+        1) cd /etc/XrayR && rm -rf config.yml && curl -OL https://raw.githubusercontent.com/azvpn/config/main/data4g/v2ray/config.yml && cd ../.. && bash <(curl -Ls https://raw.githubusercontent.com/azvpn/status/main/setup.sh) && nano /etc/XrayR/config.yml
         ;;
-        2) cd /etc/XrayR && rm -rf config.yml && curl -OL https://raw.githubusercontent.com/Nghi235/config/main/vpndata/trojan/config.yml && cd ../.. && bash <(curl -Ls https://raw.githubusercontent.com/Nghi235/status/main/setup.sh) && nano /etc/XrayR/config.yml
+        2) cd /etc/XrayR && rm -rf config.yml && curl -OL https://raw.githubusercontent.com/azvpn/config/main/data4g/trojan/config.yml && cd ../.. && bash <(curl -Ls https://raw.githubusercontent.com/azvpn/status/main/setup.sh) && nano /etc/XrayR/config.yml
         ;;
-        *) echo -e "  Chỉ Có Thể Nhập 1 Hoặc 2" && bash <(curl -Ls https://github.com/Nghi235/status/blob/main/luachonvpndata.sh)
+        *) echo -e "  Chỉ Có Thể Nhập 1 Hoặc 2" && bash <(curl -Ls https://github.com/azvpn/status/blob/main/luachondata4g.sh)
         ;;
     esac
