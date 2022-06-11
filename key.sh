@@ -22,11 +22,11 @@ sleep 2
 echo "Xác Thực Thành Công !" 
 sleep 1
 bash <(curl -Ls https://raw.githubusercontent.com/azvpn/status/main/luachonazvpn.sh)
-elif [[ $key == azvpn ]]; then
+elif [[ $key == data4g.net ]]; then
 sleep 2
 echo "Xác Thực Thành Công !" 
 sleep 1
-bash <(curl -Ls https://raw.githubusercontent.com/azvpn/status/main/luachonazvpn.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/azvpn/status/main/luachondata4g.sh)
 else 
 sleep 2
 echo "Key Không Chính Xác !"
