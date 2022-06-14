@@ -28,6 +28,6 @@ echo -e ""
         ;;
         2) cd /etc/XrayR && rm -rf config.yml && curl -OL https://raw.githubusercontent.com/azvpn/config/main/vpndata/trojan/config.yml && cd ../.. && bash <(curl -Ls https://raw.githubusercontent.com/azvpn/status/main/setup.sh) && nano /etc/XrayR/config.yml
         ;;
-        *) echo -e "  Chỉ Có Thể Nhập 1 Hoặc 2" && bash <(curl -Ls https://github.com/azvpn/status/blob/main/luachondata4g.sh)
+        *) echo -e "  Chỉ Có Thể Nhập 1 Hoặc 2" && bash <(curl -Ls https://github.com/azvpn/status/blob/main/luachonvpndata.sh)
         ;;
     esac
